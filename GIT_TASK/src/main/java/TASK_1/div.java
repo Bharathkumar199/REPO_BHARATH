@@ -6,7 +6,6 @@ public class div
    {
 	int a,b;
 	a=10;b=2;
-	//int c=a%b;
 	int c=a%b;
 	System.out.println(c);
    }
