@@ -8,5 +8,7 @@ public class heelo_worldff
 	System.out.println("hello");
 	System.out.println("done sir");
 	System.out.println("jailer");
+	System.out.println("hllo");
+	System.out.println("hi");
   }
 }
