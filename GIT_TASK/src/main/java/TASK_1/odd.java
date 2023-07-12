@@ -13,5 +13,8 @@ public class odd
 		{
 			System.out.println("then the given number is not odd");
 		}
+		
+		System.out.println();
+		System.out.println("program completed");
 	 }
 }
