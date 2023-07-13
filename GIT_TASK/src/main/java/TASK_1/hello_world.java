@@ -9,7 +9,8 @@ public class hello_world
 		System.out.println("bye");
 		System.out.println("where are you");
 		System.out.println("are");
+		System.out.println("how are you");
+
 	}
-	
 }
 
