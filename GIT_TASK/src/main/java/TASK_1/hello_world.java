@@ -7,7 +7,10 @@ public class hello_world
 		System.out.println("hello world");
 		System.err.println("hi");
 		System.out.println("bye");
+		System.out.println("where are you");
+		System.out.println("are");
+		System.out.println("how are you");
+
 	}
-	
 }
 
