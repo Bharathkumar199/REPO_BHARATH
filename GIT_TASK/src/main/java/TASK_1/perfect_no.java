@@ -19,5 +19,6 @@ public class perfect_no
 			}
 		}  
 		System.out.println();
+		System.out.println("hi");
 	}  
 }
