@@ -25,7 +25,6 @@ public class find_duplicate_method
 
 			}
 
-
 			if(count>0)
 			{
 				System.out.println(arr[i]);
@@ -40,5 +39,6 @@ public class find_duplicate_method
 		int arr[]= {10,20,20,30,30};
 		dupli(arr);
 		System.out.println("heel");
+          	System.out.println("jo");
 	}
 }
