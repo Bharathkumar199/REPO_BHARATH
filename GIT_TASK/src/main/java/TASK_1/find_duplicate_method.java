@@ -39,5 +39,6 @@ public class find_duplicate_method
 	{		
 		int arr[]= {10,20,20,30,30};
 		dupli(arr);
+		System.out.println("jo");
 	}
 }
