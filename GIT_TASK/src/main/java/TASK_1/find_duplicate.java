@@ -33,6 +33,9 @@ public class find_duplicate
 				System.out.print(arr[i]);
 			}
 			count=0;
+
+		        System.out.println("hi");
+			System.out.println("hi hello");
 		}
 	}
 }
