@@ -7,9 +7,9 @@ public class hello_world
 		System.out.println("hello world");
 		System.err.println("hi");
 		System.out.println("bye");
-
-		System.out.println("how are you");
-		System.out.println("hi dad");
+                System.out.println("how are you");
+                System.out.println("how are you");
+ 		System.out.println("hi dad");
 		System.out.println("hi mom");
 		System.out.println("hi factors");
 		System.out.println("where are you");
@@ -17,7 +17,7 @@ public class hello_world
 		System.out.println("how are you");
 		System.out.println("hi dad");
 		System.out.println("hi mom");
-
+                System.out.println("how are you and where are you");
 	}
 }
 
