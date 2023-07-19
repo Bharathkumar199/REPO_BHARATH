@@ -15,6 +15,10 @@ public class odd
 		}
 		
 		System.out.println();
+              //System.out.println("program completed");
 		System.out.println("program completed");
+		System.out.println("how are you");
+		System.out.println("hi");
+
 	 }
 }
