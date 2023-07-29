@@ -1,0 +1,45 @@
+package Basic;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.By.ByXPath;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class practice 
+{
+      public static void main(String[] args) throws InterruptedException 
+    {
+	     WebDriver driver=new ChromeDriver();
+	     driver.manage().window().maximize();
+	     Thread.sleep(2000);
+	     
+	     driver.get("https://practicetestautomation.com/practice-test-login/");
+	     
+	    By by_un=By.xpath("//input[@type='text']");                                           
+	    WebElement ele_un=driver.findElement(by_un);
+	    ele_un.sendKeys("student");
+	    Thread.sleep(2000);
+
+	    By by_pw=By.xpath("//input[@id='password']");
+	    WebElement ele_pw=driver.findElement(by_pw);
+	    ele_pw.sendKeys("Password123");
+	    Thread.sleep(2000);
+	    
+	    By by_submit=By.xpath("//button[@class='btn']");
+	    WebElement ele_submit=driver.findElement(by_submit);
+	    ele_submit.click();
+	    Thread.sleep(2000);
+	    
+	    
+	    By by_logout=By.xpath("//a[text()='Log out']");
+	    WebElement ele_lougot=driver.findElement(by_logout);
+	    ele_lougot.click();
+	    Thread.sleep(2000);
+	    
+	    
+	    driver.close();
+	    
+	    
+	}
+}
