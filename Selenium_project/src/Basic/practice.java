@@ -32,12 +32,27 @@ public class practice
 	    Thread.sleep(2000);
 	    
 	    
-	    By by_logout=By.xpath("//a[text()='Log out']");
-	    WebElement ele_lougot=driver.findElement(by_logout);
-	    ele_lougot.click();
+//	    By by_logout=By.xpath("//a[text()='Log out']");
+//	    WebElement ele_lougot=driver.findElement(by_logout);
+//	    ele_lougot.click();
+//	    Thread.sleep(2000);
+	    
+	    By by_home=By.xpath("//a[text()='Home']");
+	    WebElement ele_home=driver.findElement(by_home);
+	    ele_home.click();
+	    Thread.sleep(2000);
+	    
+	    By by_practice=By.xpath("//a[text()='Practice']");
+	    WebElement ele_practice=driver.findElement(by_practice);
+	    ele_practice.click();
 	    Thread.sleep(2000);
 	    
 	    
+	    By by_Courses=By.xpath("//a[text()='Courses']");
+	    WebElement ele_courses=driver.findElement(by_Courses);
+	    ele_courses.click();
+	    Thread.sleep(5000);
+	   
 	    driver.close();
 	    
 	}
