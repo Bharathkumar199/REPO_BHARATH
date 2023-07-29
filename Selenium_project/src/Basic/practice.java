@@ -31,12 +31,6 @@ public class practice
 	    ele_submit.click();
 	    Thread.sleep(2000);
 	    
-	    
-//	    By by_logout=By.xpath("//a[text()='Log out']");
-//	    WebElement ele_lougot=driver.findElement(by_logout);
-//	    ele_lougot.click();
-//	    Thread.sleep(2000);
-	    
 	    By by_home=By.xpath("//a[text()='Home']");
 	    WebElement ele_home=driver.findElement(by_home);
 	    ele_home.click();
@@ -52,6 +46,12 @@ public class practice
 	    WebElement ele_courses=driver.findElement(by_Courses);
 	    ele_courses.click();
 	    Thread.sleep(5000);
+	    
+	    
+	    By by_logout=By.xpath("//a[text()='Log out']");
+	    WebElement ele_lougot=driver.findElement(by_logout);
+	    ele_lougot.click();
+	    Thread.sleep(2000);
 	   
 	    driver.close();
 	    
