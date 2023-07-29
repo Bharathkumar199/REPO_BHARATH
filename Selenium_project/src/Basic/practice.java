@@ -40,6 +40,5 @@ public class practice
 	    
 	    driver.close();
 	    
-	    
 	}
 }
