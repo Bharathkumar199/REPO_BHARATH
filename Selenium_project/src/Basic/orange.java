@@ -80,5 +80,7 @@ public class orange
 	 ele_lo.click();
 	 Thread.sleep(2000);
 	 
+	 driver.close();
+	 
    }
 }
