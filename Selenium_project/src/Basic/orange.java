@@ -35,6 +35,17 @@ public class orange
 	 ele_admin.click();
 	 Thread.sleep(2000);
 	 
+//	 By by_My=By.xpath("//span[.='My Info']");
+//	 WebElement ele_My=driver.findElement(by_My);
+//	 ele_My.click();
+//	 Thread.sleep(2000);
+//	 
+//	 By by_name=By.xpath("//input[@name='firstName']");
+//	 WebElement ele_name=driver.findElement(by_name);
+//	 String c=ele_name.getAttribute("text");
+//	 ele_name.click();
+//	 Thread.sleep(2000);
+	 
 	 By by_un1=By.xpath("(//input[@class='oxd-input oxd-input--active'])[2]");
 	 WebElement ele_un1=driver.findElement(by_un1);
 	 ele_un1.sendKeys("bharath");
@@ -69,6 +80,11 @@ public class orange
 	 WebElement ele_sub=driver.findElement(by_sub);
 	 ele_sub.click();
 	 Thread.sleep(2000);
+	 
+	 By by_search=By.xpath("//button[@type='submit']");
+	 WebElement ele_search=driver.findElement(by_search);
+	 ele_search.click();
+	 Thread.sleep(5000);
 	 
 	 By by_pro=By.xpath("//span[@class='oxd-userdropdown-tab']");
 	 WebElement ele_pro=driver.findElement(by_pro);
