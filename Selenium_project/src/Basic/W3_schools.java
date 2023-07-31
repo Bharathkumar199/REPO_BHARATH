@@ -31,7 +31,7 @@ public class W3_schools
 	   Thread.sleep(10000);
 	   
 	  //By by_home=By.xpath("//i[@class='fa fa-logo ws-hover-text-green']");
-	   By by_home = By.xpath("//a[@title='Home']");
+	   By by_home = By.xpath("//button[.='Browse tutorials']");
 	   Thread.sleep(3000);
 	   WebElement ele_home=driver.findElement(by_home);
 	   Thread.sleep(3000);
