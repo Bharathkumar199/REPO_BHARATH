@@ -1,6 +1,7 @@
 package Basic;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -49,15 +50,18 @@ public class amazon
 	 ele_click.click();
 	 Thread.sleep(2000);
 	 
-	 By by_mob=By.xpath("//span[.=' A2 (Aqua Blue, 2GB RAM, 32GB Storage) | Powerful Octa Core G36 Processor | Upto 7GB RAM | Large 16.5 cm HD+ Display with Massive 5000mAh Battery | 2 Years Warranty [Limited time Offer]']");
+	 By by_mob=By.xpath("(//span[@class='a-size-medium a-color-base a-text-normal'])[3]");
 	 WebElement ele_mob=driver.findElement(by_mob);
 	 ele_mob.click();
-	 Thread.sleep(2000);
-	 
-	 By by_cart=By.xpath("//input[@name='submit.add-to-cart']");
+	 Thread.sleep(5000);
+	
+	 Thread.sleep(5000);
+	 By by_cart=By.xpath("//input[@type='button']");
+	 Thread.sleep(3000);
 	 WebElement ele_cart=driver.findElement(by_cart);
+	 Thread.sleep(3000);
 	 ele_cart.click();
-	 Thread.sleep(2000);
+	 
 	 
    }
 }
