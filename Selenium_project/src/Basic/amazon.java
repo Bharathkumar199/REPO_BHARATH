@@ -47,14 +47,14 @@ public class amazon
 	 By by_click=By.xpath("//input[@id='nav-search-submit-button']");
 	 WebElement ele_click=driver.findElement(by_click);
 	 ele_click.click();
-	 Thread.sleep(2000);
+	 Thread.sleep(4000);
 	 
-	 By by_mob=By.xpath("//span[.=' A2 (Aqua Blue, 2GB RAM, 32GB Storage) | Powerful Octa Core G36 Processor | Upto 7GB RAM | Large 16.5 cm HD+ Display with Massive 5000mAh Battery | 2 Years Warranty [Limited time Offer]']");
+	 By by_mob=By.xpath("(//span[contains(text(),'A2 (Aqua Blue, 2GB RAM, 32GB Storage) | Powerful Octa Core G36 Processor | Upto 7GB RAM | Large 16.5 cm HD+ Display with Massive 5000mAh Battery | 2 Years Warranty [Limited time Offer]')])[2]");
 	 WebElement ele_mob=driver.findElement(by_mob);
 	 ele_mob.click();
-	 Thread.sleep(2000);
+	 Thread.sleep(4000);
 	 
-	 By by_cart=By.xpath("//input[@name='submit.add-to-cart']");
+	 By by_cart=By.xpath("//input[@type='button']");
 	 WebElement ele_cart=driver.findElement(by_cart);
 	 ele_cart.click();
 	 Thread.sleep(2000);
