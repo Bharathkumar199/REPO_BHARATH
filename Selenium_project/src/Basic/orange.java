@@ -110,6 +110,22 @@ public class orange
 	 ele_save.click();
 	 Thread.sleep(2000);
 	 
+	 By by_time=By.xpath("//span[.='Time']");
+	 WebElement ele_time=driver.findElement(by_time);
+	 ele_time.click();
+	 Thread.sleep(2000);
+	 
+	 By by_name=By.xpath("//input[@placeholder='Type for hints...']");
+	 WebElement ele_name=driver.findElement(by_name);
+	 ele_name.sendKeys("SWAPNA  PARLAPU");
+	 Thread.sleep(2000);
+	 
+	 By by_su1=By.xpath("//button[@type='submit']");
+	 WebElement ele_su1=driver.findElement(by_su1);
+	 ele_su1.click();
+	 Thread.sleep(2000);
+	 
+	 
 	 By by_pro=By.xpath("//img[@class='oxd-userdropdown-img']");
 	 WebElement ele_pro=driver.findElement(by_pro);
 	 ele_pro.click();
