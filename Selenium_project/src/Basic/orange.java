@@ -110,17 +110,18 @@ public class orange
 	 ele_save.click();
 	 Thread.sleep(2000);
 	 
-	 By by_pro=By.xpath("//span[@class='oxd-userdropdown-tab']");
+	 By by_pro=By.xpath("//img[@class='oxd-userdropdown-img']");
 	 WebElement ele_pro=driver.findElement(by_pro);
 	 ele_pro.click();
 	 Thread.sleep(2000);
 	 
-	 By by_lo=By.xpath("//a[.='Logout']");
-	 WebElement ele_lo=driver.findElement(by_lo);
-	 ele_lo.click();
+	 By by_lo1=By.xpath("(//a[@class='oxd-userdropdown-link' and  //a[.='Logout']])[4]");
+	 Thread.sleep(2000);
+	 WebElement ele_lo1=driver.findElement(by_lo1);
+	 ele_lo1.click();
 	 Thread.sleep(2000);
 	 
-	 driver.close();
+	// driver.close();
 	 
    }
 }
