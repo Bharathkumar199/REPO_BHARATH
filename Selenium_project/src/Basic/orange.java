@@ -105,8 +105,7 @@ public class orange
 	 ele_ID.sendKeys("1234");
 	 Thread.sleep(2000);
 	 
-	 By by_save=By.xpath("//button[@type='submit']");
-	 WebElement ele_save=driver.findElement(by_save);
+	 WebElement ele_save=driver.findElement(by_search);
 	 ele_save.click();
 	 Thread.sleep(2000);
 	 
@@ -125,17 +124,26 @@ public class orange
 	 ele_su1.click();
 	 Thread.sleep(2000);
 	 
-	 
-	 By by_pro=By.xpath("//img[@class='oxd-userdropdown-img']");
-	 WebElement ele_pro=driver.findElement(by_pro);
-	 ele_pro.click();
+	 By by_das=By.xpath("(//span[.='Dashboard'])[1]");
+	 WebElement ele_das=driver.findElement(by_das);
+	 ele_das.click();
 	 Thread.sleep(2000);
 	 
-	 By by_lo1=By.xpath("(//a[@class='oxd-userdropdown-link' and  //a[.='Logout']])[4]");
+	 By by_orm=By.xpath("//a[.='OrangeHRM, Inc']");
+	 WebElement ele_orm=driver.findElement(by_orm);
+	 ele_orm.click();
 	 Thread.sleep(2000);
-	 WebElement ele_lo1=driver.findElement(by_lo1);
-	 ele_lo1.click();
-	 Thread.sleep(2000);
+	 
+//	 By by_pro=By.xpath("//img[@class='oxd-userdropdown-img']");
+//	 WebElement ele_pro=driver.findElement(by_pro);
+//	 ele_pro.click();
+//	 Thread.sleep(2000);
+//	 
+//	 By by_lo1=By.xpath("(//a[@class='oxd-userdropdown-link' and  //a[.='Logout']])[4]");
+//	 Thread.sleep(2000);
+//	 WebElement ele_lo1=driver.findElement(by_lo1);
+//	 ele_lo1.click();
+//	 Thread.sleep(2000);
 	 
 	// driver.close();
 	 
