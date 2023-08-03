@@ -55,12 +55,13 @@ public class amazon
 	 ele_mob.click();
 	 Thread.sleep(5000);
 	
-	 Thread.sleep(5000);
-	 By by_cart=By.xpath("//input[@type='button']");
-	 Thread.sleep(3000);
+	 By by_cart=By.xpath("//span[@id='wishListMainButton']");
 	 WebElement ele_cart=driver.findElement(by_cart);
-	 Thread.sleep(3000);
 	 ele_cart.click();
+	 
+	 By by_create=By.xpath("(//input[@class='a-button-input a-declarative'])[4]");
+	 WebElement ele_create=driver.findElement(by_create);
+	 ele_create.click();
 	 
 	 
    }
