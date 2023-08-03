@@ -24,7 +24,7 @@ public class you_tube
 	  ele_search.click();
 	  Thread.sleep(2000);
 	  
-	  By by_title=By.xpath("(//a[@href='/watch?v=_vktceH8ZA0&pp=ygUObmF0dSBuYXR1IHNvbmc%3D'])[2]");
+	  By by_title=By.xpath("(//a[@id='video-title'])[1]");
 	  WebElement ele_title=driver.findElement(by_title);
 	  ele_title.click();
 	  Thread.sleep(2000);
