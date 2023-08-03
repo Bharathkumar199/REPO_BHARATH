@@ -129,21 +129,32 @@ public class orange
 	 ele_das.click();
 	 Thread.sleep(2000);
 	 
-	 By by_orm=By.xpath("//a[.='OrangeHRM, Inc']");
-	 WebElement ele_orm=driver.findElement(by_orm);
-	 ele_orm.click();
+//	 By by_orm=By.xpath("//a[.='OrangeHRM, Inc']");
+//	 WebElement ele_orm=driver.findElement(by_orm);
+//	 ele_orm.click();
+//	 Thread.sleep(2000);
+	 
+	 By by_pro=By.xpath("//img[@class='oxd-userdropdown-img']");
+	 WebElement ele_pro=driver.findElement(by_pro);
+	 ele_pro.click();
 	 Thread.sleep(2000);
 	 
-//	 By by_pro=By.xpath("//img[@class='oxd-userdropdown-img']");
-//	 WebElement ele_pro=driver.findElement(by_pro);
-//	 ele_pro.click();
-//	 Thread.sleep(2000);
-//	 
-//	 By by_lo1=By.xpath("(//a[@class='oxd-userdropdown-link' and  //a[.='Logout']])[4]");
-//	 Thread.sleep(2000);
-//	 WebElement ele_lo1=driver.findElement(by_lo1);
-//	 ele_lo1.click();
-//	 Thread.sleep(2000);
+	 By by_lo1=By.xpath("(//a[@class='oxd-userdropdown-link' and  //a[.='Logout']])[4]");
+	 Thread.sleep(2000);
+	 WebElement ele_lo1=driver.findElement(by_lo1);
+	 ele_lo1.click();
+	 Thread.sleep(2000);
+	 
+	 WebElement ele_un2=driver.findElement(by_un);
+	 ele_un2.sendKeys("bharath");
+	 Thread.sleep(2000);
+	 
+	 WebElement ele_pw1=driver.findElement(by_pw);
+	 ele_pw1.sendKeys("admin123.@");
+	 Thread.sleep(2000);
+	 
+	 WebElement ele_lo2=driver.findElement(by_login);
+	 ele_lo2.click();
 	 
 	// driver.close();
 	 
