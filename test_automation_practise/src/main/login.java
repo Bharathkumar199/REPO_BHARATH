@@ -15,20 +15,26 @@ public class login extends base_page
 	 static WebElement ele_pw=driver.findElement(by_pw);
 	 static WebElement ele_submit=driver.findElement(by_submit);
 	 
-	 public static void accout()
+	 public static void accout() throws InterruptedException
 	 {
+		 Thread.sleep(2000);
 		 ele_un.sendKeys("student");
-
+		 Thread.sleep(2000);
 	 }
 	 
-	 public static void login1()
+	 public static void login1() throws InterruptedException
 	 {
+		 Thread.sleep(2000);
 		 ele_pw.sendKeys("Password123");
+		 Thread.sleep(2000);
 	 }
 	 
-	 public static void countine()
+	 public static void countine() throws InterruptedException
 	 {
+		 Thread.sleep(2000);
 		 ele_submit.click();
+		 Thread.sleep(2000);
+
 	 }
 	 
 	 
