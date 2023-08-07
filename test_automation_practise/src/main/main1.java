@@ -12,10 +12,10 @@ public class main1
 	  Thread.sleep(2000);
 	  login.countine();
 	  
-	  Thread.sleep(2000);
-	  title.search();
-	  title.click();
-	  title.mob();
+//	  Thread.sleep(2000);
+//	  title.search();
+//	  title.click();
+//	  title.mob();
 	  
 	  Thread.sleep(2000);
 	  logout.lg();
