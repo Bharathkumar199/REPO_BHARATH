@@ -13,18 +13,21 @@ public class login extends base_page
 	static WebElement ele_Pass=driver.findElement(by_Pass);
 	static WebElement ele_Login=driver.findElement(by_Login);
 	
-	public static void un()
+	public static void un() throws InterruptedException
 	{
+		Thread.sleep(2000);
 		ele_UN.sendKeys("bompallibharath@gmail.com");
 	}
 	
-	public static void pw()
+	public static void pw() throws InterruptedException
 	{
+		Thread.sleep(2000);
 		 ele_Pass.sendKeys("Bharath@1419");
 	}
 	
-	public static void login1()
+	public static void login1() throws InterruptedException
 	{
+		Thread.sleep(2000);
 		 ele_Login.click();
 	}
 }
