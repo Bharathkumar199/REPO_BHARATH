@@ -55,14 +55,14 @@ public class amazon
 	 ele_mob.click();
 	 Thread.sleep(5000);
 	
-	 By by_cart=By.xpath("//span[@id='wishListMainButton']");
-	 WebElement ele_cart=driver.findElement(by_cart);
-	 ele_cart.click();
-	 
-	 By by_create=By.xpath("(//input[@class='a-button-input a-declarative'])[4]");
-	 WebElement ele_create=driver.findElement(by_create);
-	 ele_create.click();
-	 
+//	 By by_cart=By.xpath("//span[@id='wishListMainButton']");
+//	 WebElement ele_cart=driver.findElement(by_cart);
+//	 ele_cart.click();
+//	 
+//	 By by_create=By.xpath("(//input[@class='a-button-input a-declarative'])[4]");
+//	 WebElement ele_create=driver.findElement(by_create);
+//	 ele_create.click();
+ 
 	 
    }
 }

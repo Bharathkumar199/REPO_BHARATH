@@ -15,18 +15,24 @@ public class title extends base_page
 	 static  WebElement ele_courses=driver.findElement(by_Courses);  
 	 
 	 
-	 public static void search()
+	 public static void search() throws InterruptedException
 	 {
+		 Thread.sleep(2000);
 		 ele_home.click();
+		 Thread.sleep(2000);
 	 }
 	 
-	 public static void click()
+	 public static void click() throws InterruptedException
 	 {
+		 Thread.sleep(2000);
 		 ele_practice.click();
+		 Thread.sleep(2000);
 	 }
 	 
-	 public static void mob()
+	 public static void mob() throws InterruptedException
 	 {
+		 Thread.sleep(2000);
 		 ele_courses.click();
+		 Thread.sleep(2000);
 	 }
 }

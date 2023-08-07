@@ -7,6 +7,7 @@ public class main1
 	  Thread.sleep(2000);
 	  login.amazon();
 	  Thread.sleep(2000);
+	  login.accout();
 	  login.login1();
 	  Thread.sleep(2000);
 	  login.countine();
