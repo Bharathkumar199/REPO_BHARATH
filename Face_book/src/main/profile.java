@@ -8,17 +8,25 @@ class profile extends Base_page
 	 static By by_profile1=By.xpath("//span[text()='B Bharath Kumar']");
 	 static By by_about=By.xpath("//span[text()='About']");
 	 
-	 static WebElement ele_profile=driver.findElement(by_profile1);
-	 static WebElement ele_about=driver.findElement(by_about);
+	 static WebElement profile()
+	 {
+		 return driver.findElement(by_profile1);
+	 }
+	 
+	 static WebElement about()
+	 {
+		return driver.findElement(by_about);
+	 }
+	
 	 
 	 public static void profile1()
 	 {
-		 ele_profile.click();
+		 profile().click();
 	 }
 	 
-	 public static void about()
+	 public static void about1()
 	 {
-		 ele_about.click();
+		 about().click();
 	 }
 	 
 }
