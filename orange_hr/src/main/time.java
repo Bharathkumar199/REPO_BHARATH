@@ -17,7 +17,7 @@ public class time extends base_page
 	static WebElement ele_su1=driver.findElement(by_su1);
 	static WebElement ele_das=driver.findElement(by_das);
 	
-	public static void time()
+	public static void time1()
 	{
 		ele_time.click();
 	}
