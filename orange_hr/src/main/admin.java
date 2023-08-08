@@ -11,6 +11,10 @@ public class admin extends base_page
 	static By by_dd=By.xpath("(//div[.='ESS'])[1]");
 	static By by_hint=By.xpath("//input[@placeholder='Type for hints...']");
 	static By by_dd2=By.xpath("(//div[@class='oxd-select-text--after'])[2]");
+	static By by_enabled=By.xpath("(//div[.='Enabled'])[1]");
+	static By by_sub=By.xpath("//button[@type='submit']");
+	static By by_search=By.xpath("//button[@type='submit']");
+	
 	
 	
 	static WebElement ele_admin=driver.findElement(by_admin);
@@ -19,6 +23,9 @@ public class admin extends base_page
 	static WebElement ele_dd=driver.findElement(by_dd);
 	static WebElement ele_hint=driver.findElement(by_hint);
 	static WebElement ele_dd2=driver.findElement(by_dd2);
+	static WebElement ele_enabled=driver.findElement(by_enabled);
+	static WebElement ele_sub=driver.findElement(by_sub);
+	static WebElement ele_search=driver.findElement(by_search);
 	
 	public static void ad()
 	{
@@ -35,7 +42,7 @@ public class admin extends base_page
 		ele_dd1.click();
 	}
 	
-	public static void dd()
+	public static void dd()                                                                                       
 	{
 		ele_dd.click();
 	}
@@ -48,5 +55,20 @@ public class admin extends base_page
 	public static void dd2()
 	{
 		ele_dd2.click();
+	}
+	
+	public static void enabled()
+	{
+		ele_enabled.click();
+	}
+	
+	public static void sub1()
+	{
+		ele_sub.click();
+	}
+	
+	public static void sear1()
+	{
+		ele_search.click();
 	}
 }
