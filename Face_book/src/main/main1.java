@@ -17,7 +17,7 @@ public class main1
 	  Thread.sleep(2000);
 	  profile.profile1();
 	  Thread.sleep(2000);
-	  profile.about();
+	  profile.about1();
 	  
 	  Thread.sleep(2000);
 	  logout.profile2();
