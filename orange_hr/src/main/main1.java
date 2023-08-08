@@ -20,5 +20,10 @@ public class main1
 	   admin.sub1();
 	   admin.sear1();
 	   
+	   time.time1();
+	   time.nmae();
+	   time.su1();
+	   time.das();
+	   
    }
 }
