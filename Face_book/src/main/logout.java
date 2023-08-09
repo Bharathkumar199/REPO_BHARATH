@@ -13,7 +13,7 @@ class logout extends Base_page
 		  return driver.findElement(by_profile);
 	 }
 	
-	 static WebElement log()
+	  static WebElement log()
 	 {
 		return driver.findElement(by_logout);
 	 }

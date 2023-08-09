@@ -7,9 +7,7 @@ public class main1
 {
    public static void main(String[] args) throws InterruptedException 
    {
-
-	  
-	  Login_page.facebook();
+      Login_page.facebook();
 	  Login_page.un();
 	  Login_page.pw();
 	  Login_page.login();
