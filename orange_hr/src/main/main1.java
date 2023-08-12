@@ -18,7 +18,7 @@ public class main1
 	   admin.dd2();
 	   admin.enabled();
 	   admin.sub1();
-	   admin.sear1();
+//	   admin.sear1();
 	   
 	   time.time1();
 	   time.nmae();

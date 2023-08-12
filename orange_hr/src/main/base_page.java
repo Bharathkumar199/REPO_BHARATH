@@ -12,6 +12,5 @@ public class base_page
 		   driver=new ChromeDriver();
 		   driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		   driver.manage().window().maximize();
-		   
 	   }
 }
