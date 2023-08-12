@@ -13,7 +13,7 @@ public class admin extends base_page
 	static By by_dd2=By.xpath("(//div[@class='oxd-select-text--after'])[2]");
 	static By by_enabled=By.xpath("(//div[.='Enabled'])[1]");
 	static By by_sub=By.xpath("//button[@type='submit']");
-	static By by_search=By.xpath("//button[@type='submit']");
+//	static By by_search=By.xpath("//button[@type='submit']");
 	
 	
 	
@@ -25,7 +25,7 @@ public class admin extends base_page
 	static WebElement ele_dd2=driver.findElement(by_dd2);
 	static WebElement ele_enabled=driver.findElement(by_enabled);
 	static WebElement ele_sub=driver.findElement(by_sub);
-	static WebElement ele_search=driver.findElement(by_search);
+//	static WebElement ele_search=driver.findElement(by_search);
 	
 	public static void ad()
 	{
@@ -67,8 +67,8 @@ public class admin extends base_page
 		ele_sub.click();
 	}
 	
-	public static void sear1()
-	{
-		ele_search.click();
-	}
+//	public static void sear1()
+//	{
+//		ele_search.click();
+//	}
 }
