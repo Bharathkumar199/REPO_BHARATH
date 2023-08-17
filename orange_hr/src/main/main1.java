@@ -9,7 +9,6 @@ public class main1
 	   login.pw();
 	   login.submit();
 	   
-	   
 	   admin.ad();
 	   admin.un1();
 	   admin.dd1();
@@ -18,7 +17,7 @@ public class main1
 	   admin.dd2();
 	   admin.enabled();
 	   admin.sub1();
-//	   admin.sear1();
+	   admin.sear1();
 	   
 	   time.time1();
 	   time.nmae();
