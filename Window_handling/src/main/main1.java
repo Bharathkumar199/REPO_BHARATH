@@ -10,5 +10,9 @@ public class main1
 	  login.co();
 	  login.p();
 	  login.sub();
+	  
+	  search.sear();
+	  search.cli();
+	  search.mob();
   }
 }
