@@ -18,13 +18,15 @@ public class title extends base_page
 	      return driver.findElement(by_clcik);
 	 }
 	 
-	 public static void tile()
+	 public static void tile() throws InterruptedException
 	 {
+		 Thread.sleep(2000);
 		 tit().click();
 	 }
 	 
-	 public static void like()
+	 public static void like() throws InterruptedException
 	 {
+		 Thread.sleep(2000);
 		  clic().click();
 	 }
 }

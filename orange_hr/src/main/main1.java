@@ -2,7 +2,7 @@ package main;
 
 public class main1 
 {
-   public static void main(String[] args) 
+   public static void main(String[] args) throws InterruptedException 
    {
 	   login.lanch();
 	   login.un();
@@ -23,6 +23,9 @@ public class main1
 	   time.nmae();
 	   time.su1();
 	   time.das();
+	   
+	   logout.pro();
+	   logout.lg();
 	   
    }
 }

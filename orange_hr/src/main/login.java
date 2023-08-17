@@ -9,22 +9,34 @@ public class login extends base_page
 	 static By by_pw=By.xpath("//input[@name='password']");
 	 static By by_login=By.xpath("//button[@type='submit']");
 	 
-	 static WebElement ele_un=driver.findElement(by_un);
-	 static WebElement ele_pw=driver.findElement(by_pw);
-	 static WebElement ele_login=driver.findElement(by_login);
-	 
-	 public static void un()
+	 static WebElement un1()
 	 {
-		 ele_un.sendKeys("Admin");
+		 return driver.findElement(by_un);
+	 }
+	 static WebElement pw1()
+	 {
+		 return driver.findElement(by_pw);
+	 }
+	 static WebElement login()
+	 {
+		 return driver.findElement(by_login);
 	 }
 	 
-	 public static void pw()
+	 public static void un() throws InterruptedException
 	 {
-		 ele_pw.sendKeys("admin123");
+		 Thread.sleep(3000);
+		 un1().sendKeys("Admin");
 	 }
 	 
-	 public static void submit()
+	 public static void pw() throws InterruptedException
 	 {
-		 ele_login.click(); 
+		 Thread.sleep(3000);
+		 pw1().sendKeys("admin123");
+	 }
+	 
+	 public static void submit() throws InterruptedException
+	 {
+		 Thread.sleep(3000);
+		 login().click(); 
 	 }
 }

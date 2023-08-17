@@ -17,58 +17,98 @@ public class admin extends base_page
 	
 	
 	
-	static WebElement ele_admin=driver.findElement(by_admin);
-	static WebElement ele_un1=driver.findElement(by_un1);
-	static WebElement ele_dd1=driver.findElement(by_dd1);
-	static WebElement ele_dd=driver.findElement(by_dd);
-	static WebElement ele_hint=driver.findElement(by_hint);
-	static WebElement ele_dd2=driver.findElement(by_dd2);
-	static WebElement ele_enabled=driver.findElement(by_enabled);
-	static WebElement ele_sub=driver.findElement(by_sub);
-	static WebElement ele_search=driver.findElement(by_search);
-	
-	public static void ad()
+	static WebElement admin()
 	{
-		ele_admin.click();
+		return driver.findElement(by_admin);
+	}
+	static WebElement un()
+	{
+		return driver.findElement(by_un1);
+	}
+	static WebElement dd3()
+	{
+		return driver.findElement(by_dd1);
+	}
+	static WebElement dd4()
+	{
+		return driver.findElement(by_dd);
+	}
+	static WebElement hint1()
+	{
+		return driver.findElement(by_hint);
+	}
+	static WebElement dd5()
+	{
+		return driver.findElement(by_dd2);
+	}
+	static WebElement enabled1()
+	{
+		return driver.findElement(by_enabled);
+	}
+	static WebElement sub()
+	{
+		return driver.findElement(by_sub);
+	}
+	static WebElement search()
+	{
+		return driver.findElement(by_search);
 	}
 	
-	public static void un1()
+	
+	// ACTIONS
+	
+	
+	public static void ad() throws InterruptedException
 	{
-		ele_un1.sendKeys("bharath");
+		Thread.sleep(3000);
+		admin().click();
 	}
 	
-	public static void dd1()
+	public static void un1() throws InterruptedException
 	{
-		ele_dd1.click();
+		Thread.sleep(3000);
+		un().sendKeys("bharath");
 	}
 	
-	public static void dd()                                                                                       
+	public static void dd1() throws InterruptedException
 	{
-		ele_dd.click();
+		Thread.sleep(3000);
+		dd3().click();
 	}
 	
-	public static void hint()
+	public static void dd() throws InterruptedException                                                                                       
 	{
-		ele_hint.sendKeys("xyz  abc");
+		Thread.sleep(3000);
+		dd4().click();
 	}
 	
-	public static void dd2()
+	public static void hint() throws InterruptedException
 	{
-		ele_dd2.click();
+		Thread.sleep(2000);
+		hint1().sendKeys("xyz  abc");
 	}
 	
-	public static void enabled()
+	public static void dd2() throws InterruptedException
 	{
-		ele_enabled.click();
+		Thread.sleep(3000);
+		dd5().click();
 	}
 	
-	public static void sub1()
+	public static void enabled() throws InterruptedException
 	{
-		ele_sub.click();
+		Thread.sleep(3000);
+		enabled1().click();
 	}
 	
-	public static void sear1()
+	public static void sub1() throws InterruptedException
 	{
-		ele_search.click();
+		Thread.sleep(3000);
+		sub().click();
+	}
+	
+	public static void sear1() throws InterruptedException
+	{
+		Thread.sleep(3000);
+		search().click();
 	}
 }

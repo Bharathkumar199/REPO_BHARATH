@@ -12,28 +12,49 @@ public class time extends base_page
 	
 	
 	
-	static WebElement ele_time=driver.findElement(by_time);
-	static WebElement ele_name=driver.findElement(by_name);
-	static WebElement ele_su1=driver.findElement(by_su1);
-	static WebElement ele_das=driver.findElement(by_das);
-	
-	public static void time1()
+	static WebElement time()
 	{
-		ele_time.click();
+		return driver.findElement(by_time);
+	}
+	static WebElement name()
+	{
+		return driver.findElement(by_name);
+	}
+	static WebElement su2()
+	{
+		return driver.findElement(by_su1);
+	}
+	static WebElement das1()
+	{
+		return driver.findElement(by_das);
 	}
 	
-	public static void nmae()
+	
+	
+	//ACTIONS
+	
+	
+	public static void time1() throws InterruptedException
 	{
-		ele_name.sendKeys("SWAPNA  PARLAPU");
+		Thread.sleep(2000);
+		time().click();
 	}
 	
-	public static void su1()
+	public static void nmae() throws InterruptedException
 	{
-		ele_su1.click();
+		Thread.sleep(2000);
+		name().sendKeys("SWAPNA  PARLAPU");
 	}
 	
-	public static void das()
+	public static void su1() throws InterruptedException
 	{
-		ele_das.click();
+		Thread.sleep(2000);
+		su2().click();
+	}
+	
+	public static void das() throws InterruptedException
+	{
+		Thread.sleep(2000);
+		das1().click();
 	}
 }
