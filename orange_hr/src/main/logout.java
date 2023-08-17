@@ -8,16 +8,27 @@ public class logout extends base_page
 	static By by_pro=By.xpath("//img[@class='oxd-userdropdown-img']");
 	static By by_lo1=By.xpath("(//a[@class='oxd-userdropdown-link' and  //a[.='Logout']])[4]");
 	
-	static WebElement ele_pro=driver.findElement(by_pro);
-	static WebElement ele_lo1=driver.findElement(by_lo1);
-	
-	public static void pro()
+	static WebElement pro1()
 	{
-		ele_pro.click();
+		return driver.findElement(by_pro);
+	}
+	static WebElement lo1()
+	{
+		return driver.findElement(by_lo1);
 	}
 	
-	public static void lg()
+	//ACTONS
+	
+	
+	public static void pro() throws InterruptedException
 	{
-		ele_lo1.click();
+		Thread.sleep(2000);
+		pro1().click();
+	}
+	
+	public static void lg() throws InterruptedException
+	{
+		Thread.sleep(2000);
+		lo1().click();
 	}
 }
