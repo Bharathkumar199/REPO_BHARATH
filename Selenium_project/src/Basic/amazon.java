@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import dev.failsafe.internal.util.Assert;
+
 public class amazon 
 {
    public static void main(String[] args) throws InterruptedException 
@@ -53,12 +55,19 @@ public class amazon
 	 By by_mob=By.xpath("(//span[@class='a-size-medium a-color-base a-text-normal'])[3]");
 	 WebElement ele_mob=driver.findElement(by_mob);
 	 ele_mob.click();
-	 Thread.sleep(5000);
+	 Thread.sleep(6000);
+//	
+//	 driver.switchTo().frame();
+//	 WebElement d=driver.findElement(By.xpath("//i[@class='a-icon a-icon-cart']"));
 	
-//	 By by_cart=By.xpath("//span[@id='wishListMainButton']");
-//	 WebElement ele_cart=driver.findElement(by_cart);
-//	 ele_cart.click();
-//	 
+	 
+	 By by_cart=By.xpath("//div[@id='preAddToCartFramework_feature_div']");
+	 WebElement ele_cart=driver.findElement(by_cart);
+	 Thread.sleep(6000);
+	 ele_cart.click();
+	 Thread.sleep(5000);
+	 System.out.println("kk");
+	 
 //	 By by_create=By.xpath("(//input[@class='a-button-input a-declarative'])[4]");
 //	 WebElement ele_create=driver.findElement(by_create);
 //	 ele_create.click();
