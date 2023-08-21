@@ -28,7 +28,7 @@ public class W3_schools
 	   By by_Login=By.xpath("//span[text()='Log in']");
 	   WebElement ele_Login=driver.findElement(by_Login);
 	   ele_Login.click();
-	   Thread.sleep(10000);
+	   Thread.sleep(3000);
 	   
 	   driver.switchTo().frame("classic-menu");
 	   
@@ -36,7 +36,17 @@ public class W3_schools
 	   By by_profile=By.xpath("//a[text()='Profile']");
 	   WebElement ele_profile=driver.findElement(by_profile);
 	   ele_profile.click();
-	   Thread.sleep(10000);
+	   Thread.sleep(3000);
+	   
+	   
+	   
+	   driver.switchTo().defaultContent();
+	   Thread.sleep(2000);
+	   By by_pt=By.xpath("//a[text()='W3schools']");
+	   WebElement ele_pt=driver.findElement(by_pt);
+	   Thread.sleep(2000);
+	   ele_pt.click();
+	   
 	   
 
    }
