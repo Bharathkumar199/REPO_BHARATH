@@ -13,5 +13,7 @@ public class main1
 	title.ele_pro();
 	Thread.sleep(3000);
 	title.tit();
+	Thread.sleep(6000);
+	title.cl();
   }
 }
