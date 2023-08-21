@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 public class title extends base_page
 {
 	
-	//static By by_pro=By.xpath("/html/body/div[1]/div/iframe");
+	
 	static By by_pro=By.xpath("//iframe[@id='classic-menu']");
 	static By by_UN=By.xpath("//a[text()='Profile']");
 	
