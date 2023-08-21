@@ -22,7 +22,7 @@ public class W3_schools
 	   
 	   By by_Pass=By.xpath("//input[@id='current-password']");
 	   WebElement ele_Pass=driver.findElement(by_Pass);
-	   ele_Pass.sendKeys("Bharath@1419");
+	   ele_Pass.sendKeys("Bharath*1419");
 	   Thread.sleep(3000);
 	   
 	   By by_Login=By.xpath("//span[text()='Log in']");
@@ -30,15 +30,14 @@ public class W3_schools
 	   ele_Login.click();
 	   Thread.sleep(10000);
 	   
-	  //By by_home=By.xpath("//i[@class='fa fa-logo ws-hover-text-green']");
-	   By by_home = By.xpath("//button[.='Browse tutorials']");
-	   Thread.sleep(3000);
-	   WebElement ele_home=driver.findElement(by_home);
-	   Thread.sleep(3000);
+	   driver.switchTo().frame("classic-menu");
 	   
-//	   By by_java=By.xpath("//a[text()='Java Tutorial']");
-//	   WebElement ele_java=driver.findElement(by_java);
-//	   ele_java.click();
-//	   Thread.sleep(2000);
+	   Thread.sleep(2000);
+	   By by_profile=By.xpath("//a[text()='Profile']");
+	   WebElement ele_profile=driver.findElement(by_profile);
+	   ele_profile.click();
+	   Thread.sleep(10000);
+	   
+
    }
 }

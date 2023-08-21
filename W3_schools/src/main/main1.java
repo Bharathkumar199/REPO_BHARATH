@@ -9,6 +9,9 @@ public class main1
 	login.pw();
 	login.login1();
 	
+	Thread.sleep(4000);
+	title.ele_pro();
+	Thread.sleep(3000);
 	title.tit();
   }
 }
