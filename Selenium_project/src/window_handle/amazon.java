@@ -38,7 +38,7 @@ public class amazon
 			}
 	     	     }
 	     driver.switchTo().window(parentwindow);
-	     System.out.println(parentwindow );
+	     System.out.println("parent window - " + parentwindow );
 	     Thread.sleep(2000);
 	}
 }
