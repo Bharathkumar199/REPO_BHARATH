@@ -1,7 +1,9 @@
 package window_handle;
 
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,56 +11,68 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class irtc 
 {
-  public static void main(String[] args) throws InterruptedException 
-  {
-	WebDriver driver=new ChromeDriver();
-	driver.manage().window().maximize();
-	driver.get("https://www.irctc.co.in/nget/train-search");
-	Thread.sleep(2000);
-	
-	String parent=driver.getWindowHandle();
-	
-	System.out.println("parentwindow - " + parent);
-	
-	By by_bus=By.xpath("//a[text()=' BUSES ']");
-	WebElement ele_bus=driver.findElement(by_bus);
-	Thread.sleep(2000);
-	ele_bus.click();
-	
-	Set<String> handle=driver.getWindowHandles();
-	
-	for (String handles : handle) 
-		
+	public static void main(String[] args) throws InterruptedException 
 	{
-		System.out.println(handles);
-		if(!parent.equals(handles))
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.irctc.co.in/nget/train-search");
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+		String parent=driver.getWindowHandle();
+
+		System.out.println("parentwindow - " + parent);
+
+		By by_bus=By.xpath("//a[text()=' BUSES ']");
+		WebElement ele_bus=driver.findElement(by_bus);
+		Thread.sleep(2000);
+		ele_bus.click();
+
+
+		Set<String> handle=driver.getWindowHandles();
+
+		for (String handles : handle) 
+
 		{
-			driver.switchTo().window(handles);
-			Thread.sleep(2000);
+			System.out.println(handles);
+			if(!parent.equals(handles))
+			{
+				driver.switchTo().window(handles);
+				By by_hotel=By.xpath("//div[@class='Nav-icons IRCTCHotels']");
+				WebElement ele_hotel=driver.findElement(by_hotel);
+				Thread.sleep(2000);
+				ele_hotel.click();
+				Thread.sleep(2000);
+			}
 		}
+		driver.switchTo().window(parent);
+		System.out.println("parent window - " + parent+"*********");
+		Thread.sleep(2000);
+
+
+		By by_flight=By.xpath("//a[.=' FLIGHTS ']");
+		WebElement ele_flight=driver.findElement(by_flight);
+		Thread.sleep(2000);
+		ele_flight.click();
+
+        By by_pop=By.xpath("//button[.='Later']");
+		System.out.println(driver.getTitle());
+		Set<String>c=driver.getWindowHandles();
+		String[] Geeks = c.toArray(new String[c.size()]);
+		driver.switchTo().window(Geeks[3]);
+		System.out.println(driver.getTitle()+"  flight");
+		Thread.sleep(6000);
+
+		WebElement ele_pop=driver.findElement(by_pop);
+		ele_pop.click();
+
+		By by_login=By.xpath("//a[.='Login']");
+		WebElement ele_login=driver.findElement(by_login);
+		Thread.sleep(2000);
+		ele_login.click();
+
+		By by_eun=By.xpath("//input[@id='loginuseridUser']");
+		WebElement ele_eun=driver.findElement(by_eun);
+		Thread.sleep(2000);
+		ele_eun.sendKeys("bharath");
 	}
-	 driver.switchTo().window(parent);
-     System.out.println("parent window - " + parent);
-     Thread.sleep(2000);
-
-     for (String handles : handle) 
- 		
- 	{
- 		System.out.println(handles);
- 		if(!parent.equals(handles))
- 		{
- 			driver.switchTo().window(handles);
- 			Thread.sleep(2000);
-
- 		}
- 	}
-     
-    
-//    By by_cli=By.xpath("//span[text()='Bus Tickets']");
-// 	WebElement ele_cli=driver.findElement(by_cli);
-// 	Thread.sleep(2000);
-// 	ele_cli.click();
-     
-	
-}
 }
