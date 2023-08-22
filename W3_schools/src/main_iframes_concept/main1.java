@@ -1,4 +1,4 @@
-package main;
+package main_iframes_concept;
 
 public class main1 
 {
@@ -14,6 +14,8 @@ public class main1
 	Thread.sleep(3000);
 	title.tit();
 	Thread.sleep(6000);
-	title.cl();
+	title.ele_pt();
+	Thread.sleep(2000);
+	title.tit1();
   }
 }
