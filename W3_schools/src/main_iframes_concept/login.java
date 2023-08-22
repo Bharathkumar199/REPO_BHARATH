@@ -1,4 +1,4 @@
-package main;
+package main_iframes_concept;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
