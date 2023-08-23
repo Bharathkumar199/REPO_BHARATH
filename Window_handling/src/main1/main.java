@@ -6,5 +6,12 @@ public class main
     {
 		profile_bus.irtc();
 		profile_bus.bu();
+		
+		flight.fli();
+		flight.later();
+		
+		login.login();
+		login.un();
+		login.x();
 	}
 }

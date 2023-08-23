@@ -8,6 +8,11 @@ import org.openqa.selenium.WebElement;
 
 public class profile_bus extends base_page
 {
+
+	
+	//XPATH 
+	
+	
 	static By by_bus=By.xpath("//a[text()=' BUSES ']");
 	static By by_hotel=By.xpath("//div[@class='Nav-icons IRCTCHotels']");
 	
@@ -54,6 +59,8 @@ public class profile_bus extends base_page
 				Thread.sleep(2000);
 			}
 		}
+		driver.switchTo().window(parent);
+		System.out.println("parent window - " + parent+"*********");
 	}
 	
 	
