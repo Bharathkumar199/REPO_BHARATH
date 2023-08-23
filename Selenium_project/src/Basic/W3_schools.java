@@ -13,7 +13,8 @@ public class W3_schools
 {
    public static void main(String[] args) throws InterruptedException 
    {
-	   WebDriver driver=new ChromeDriver();
+	   System.setProperty("webdriver.chrome.driver","./softwares/chromedriver.exe");
+	   WebDriver driver= new ChromeDriver();
 	   driver.get("https://profile.w3schools.com/");
 	   driver.manage().window().maximize();
 	   driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
