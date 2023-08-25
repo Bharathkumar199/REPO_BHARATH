@@ -1,9 +1,16 @@
 package Basic;
 
+import java.sql.Time;
+import java.time.Duration;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import dev.failsafe.Timeout;
 
 public class Facebook 
 {
@@ -11,6 +18,7 @@ public static void main(String[] args) throws InterruptedException
  {
 	WebDriver driver =new ChromeDriver();
 	driver.get("https://www.facebook.com/");
+	//WebDriverWait d=new WebDriverWait(driver,Duration.ofSeconds(8000));
 	driver.manage().window().maximize();
 	Thread.sleep(2000);
 	
