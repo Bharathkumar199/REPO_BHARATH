@@ -32,8 +32,6 @@ public class pan_new_program
 
 		System.out.println(e  +" 2 handle  ");
 
-		List<String> list1 = new ArrayList(e);
-		Thread.sleep(2000);
 		List<String> differentValues = new ArrayList<>();
 
 		for(String value:d)
@@ -53,6 +51,7 @@ public class pan_new_program
 		}
 
 		System.out.println("Different values: " + differentValues);
+		driver.close();
 	}
 }
 
