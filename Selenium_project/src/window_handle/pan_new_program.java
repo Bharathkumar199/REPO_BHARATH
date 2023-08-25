@@ -50,18 +50,6 @@ public class pan_new_program
 
 		System.out.println("Different values: " + differentValues);
 	}
-
-
-
-
-	//		d.retainAll(e);
-	//        System.out.println( d );
-	//        
-	//        List<String> differences = new ArrayList<>(d); 
-	//        differences. removeAll(e); 
-
-
-
 }
 
 
