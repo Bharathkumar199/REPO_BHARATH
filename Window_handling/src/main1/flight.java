@@ -33,8 +33,8 @@ public class flight extends base_page
 	{
 		System.out.println(driver.getTitle());
 		Set<String>c=driver.getWindowHandles();
-		String[] Geeks = c.toArray(new String[c.size()]);
-		driver.switchTo().window(Geeks[3]);
+		String arr[] = c.toArray(new String[c.size()]);
+		driver.switchTo().window(arr[3]);
 		System.out.println(driver.getTitle()+"  flight");
 		Thread.sleep(6000);
 		

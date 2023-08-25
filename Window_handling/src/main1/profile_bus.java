@@ -10,6 +10,8 @@ public class profile_bus extends base_page
 {
 
 	
+	
+	public static String parent=driver.getWindowHandle();
 	//XPATH 
 	
 	
@@ -43,7 +45,7 @@ public class profile_bus extends base_page
 	public static void bu() throws InterruptedException
 	{
 		ma().click();
-		String parent=driver.getWindowHandle();
+		
 		System.out.println("parentwindow - " + parent);
 		
 		Set<String> handle=driver.getWindowHandles();

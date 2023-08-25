@@ -13,5 +13,7 @@ public class main
 		login.login();
 		login.un();
 		login.x();
+		
+		delete_tab.delete();
 	}
 }

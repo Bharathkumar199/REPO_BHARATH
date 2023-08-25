@@ -19,8 +19,13 @@ public class base_page
 //	   Wait<WebDriver> wait=new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(20))
 //			   .pollingEvery(Duration.ofSeconds(4));
 	   driver.manage().timeouts().implicitlyWait(10000,TimeUnit.SECONDS);
+	   
 	   driver.get("https://www.irctc.co.in/nget/train-search");
 	   
 	   
    }
+   
+   
+   
+
 }
