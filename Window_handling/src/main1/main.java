@@ -4,11 +4,11 @@ public class main
 {
      public static void main(String[] args) throws InterruptedException 
     {
-		profile_bus.irtc();
-		profile_bus.bu();
+		profile_bus______________1.irtc();
+		profile_bus______________1.bu();
 		
-		flight.fli();
-		flight.later();
+		flight________2.fli();
+		flight________2.later();
 		
 		login.login();
 		login.un();

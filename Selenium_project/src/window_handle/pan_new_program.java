@@ -36,14 +36,18 @@ public class pan_new_program
 		Thread.sleep(2000);
 		List<String> differentValues = new ArrayList<>();
 
-		for (String value : d) {
-			if (!e.contains(value)) {
+		for(String value:d)
+		{
+			if(!e.contains(value))
+			{
 				differentValues.add(value);
 			}
 		}
 
-		for (String value : e) {
-			if (!d.contains(value)) {
+		for (String value : e) 
+		{
+			if (!d.contains(value)) 
+			{
 				differentValues.add(value);
 			}
 		}

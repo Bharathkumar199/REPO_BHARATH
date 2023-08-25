@@ -13,7 +13,7 @@ public class delete_tab extends base_page
 		driver.close();
 		System.out.println(driver.getTitle()+"  flight");
 
-        driver.switchTo().window(profile_bus.parent);
+        driver.switchTo().window(profile_bus______________1.parent);
 	}
 	
 	
