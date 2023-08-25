@@ -5,7 +5,7 @@ import java.util.Set;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-public class flight extends base_page
+public class flight________2 extends base_page
 {
 	static By by_flight=By.xpath("//a[.=' FLIGHTS ']");
 	static By by_pop=By.xpath("//button[.='Later']");

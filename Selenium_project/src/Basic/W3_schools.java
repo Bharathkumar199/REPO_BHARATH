@@ -49,6 +49,12 @@ public class W3_schools
 	   WebElement ele_pt1=driver.findElement(by_pt1);
 	   ele_pt1.click();
 	   
+	   By by_face=By.xpath("(//a[@title='W3Schools on Facebook'])[3]");
+	   WebElement ele_face=driver.findElement(by_face);
+	   Thread.sleep(2000);
+	   ele_face.click();
+	   
+	   
 	   
 	}
 }

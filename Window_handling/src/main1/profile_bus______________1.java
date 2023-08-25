@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class profile_bus extends base_page
+public class profile_bus______________1 extends base_page
 {
 
 	
