@@ -32,6 +32,7 @@ public class pan_new_program
 
 		System.out.println(e  +" 2 handle  ");
 
+		
 		List<String> differentValues = new ArrayList<>();
 
 		for(String value:d)
