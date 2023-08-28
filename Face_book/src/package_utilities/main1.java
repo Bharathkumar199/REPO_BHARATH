@@ -12,14 +12,14 @@ public class main1
 	  Login_page.pw();
 	  Login_page.login();
 	  
-	  Thread.sleep(2000);
+//	  Thread.sleep(2000);
 	  profile.profile1();
-	  Thread.sleep(2000);
+//	  Thread.sleep(2000);
 	  profile.about1();
 	  
-	  Thread.sleep(2000);
+//	  Thread.sleep(2000);
 	  logout.profile2();
-	  Thread.sleep(2000);
+//	  Thread.sleep(2000);
 	  logout.logout1();
    }
 }

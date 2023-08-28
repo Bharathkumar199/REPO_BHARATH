@@ -20,20 +20,20 @@ class Login_page extends Base_page
 	{
 		Thread.sleep(2000);
 		ele_mail.sendKeys("9581509211");
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 	}
 	
 	public static void pw() throws InterruptedException
 	{
 		Thread.sleep(2000);
 		ele_pass.sendKeys("vanijoyce");
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 	}
 	
 	public static void login() throws InterruptedException
 	{
 		Thread.sleep(2000);
 		ele_button.click();
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 	}
 }
