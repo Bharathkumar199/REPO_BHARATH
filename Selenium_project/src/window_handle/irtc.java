@@ -12,7 +12,7 @@ public class irtc
 {
 	public static void main(String[] args) throws InterruptedException 
 	{
-		
+
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.irctc.co.in/nget/train-search");
@@ -46,33 +46,56 @@ public class irtc
 		}
 		driver.switchTo().window(parent);
 		System.out.println("parent window - " + parent+"*********");
-		Thread.sleep(2000);
+		//		Thread.sleep(2000);
 
 
 		By by_flight=By.xpath("//a[.=' FLIGHTS ']");
 		WebElement ele_flight=driver.findElement(by_flight);
-		Thread.sleep(2000);
+		//		Thread.sleep(2000);
 		ele_flight.click();
 
-        By by_pop=By.xpath("//button[.='Later']");
+		By by_pop=By.xpath("//button[.='Later']");
 		System.out.println(driver.getTitle());
 		Set<String>c=driver.getWindowHandles();
 		String[] Geeks = c.toArray(new String[c.size()]);
 		driver.switchTo().window(Geeks[3]);
 		System.out.println(driver.getTitle()+"  flight");
-		Thread.sleep(6000);
+		//		Thread.sleep(6000);
 
 		WebElement ele_pop=driver.findElement(by_pop);
 		ele_pop.click();
 
 		By by_login=By.xpath("//a[.='Login']");
 		WebElement ele_login=driver.findElement(by_login);
-		Thread.sleep(2000);
+		//		Thread.sleep(2000);
 		ele_login.click();
 
 		By by_eun=By.xpath("//input[@id='loginuseridUser']");
 		WebElement ele_eun=driver.findElement(by_eun);
-		Thread.sleep(2000);
+		//		Thread.sleep(2000);
 		ele_eun.sendKeys("bharath");
+
+		By by_x=By.xpath("(//i[@class='fa fa-close'])[2]");
+		WebElement ele_x=driver.findElement(by_x);
+		//		Thread.sleep(2000);
+		ele_x.click();
+	    System.out.println(driver.getTitle());
+		driver.close();
+
+        
+		
+//		Set<String> c1=driver.getWindowHandles();
+//		String arr[]=c1.toArray(new String[c1.size()]);
+//		driver.switchTo().window(Geeks[2]);
+//		By by_na=By.xpath("//input[@id='loginuseridUser']");
+//		WebElement ele_na=driver.findElement(by_na);
+//		Thread.sleep(6000);
+//		ele_na.sendKeys("bharath");
+//		driver.close();		
+
+
 	}
+
+
+
 }
